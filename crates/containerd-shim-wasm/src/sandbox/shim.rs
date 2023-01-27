@@ -1044,6 +1044,7 @@ where
             return Err(Error::InvalidArgument("exec is not supported".to_string()));
         }
         self.get_instance(req.get_id())?.kill(req.get_signal())?;
+        debug!("killed: {:?}", req);
         Ok(())
     }
 
@@ -1088,6 +1089,7 @@ where
         self.instances.write().unwrap().remove(req.get_id());
 
         self.send_event(event);
+        debug!("deleted: {:?}", req);
         Ok(resp)
     }
 

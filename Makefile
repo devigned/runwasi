@@ -18,6 +18,10 @@ KIND_CLUSTER_NAME ?= containerd-wasm
 build:
 	cargo build $(RELEASE_FLAG)
 
+.PHONY: clean
+clean:
+	cargo clean
+
 .PHONY: install
 install:
 	mkdir -p $(PREFIX)/bin
