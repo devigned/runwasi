@@ -43,7 +43,7 @@ pub enum Error {
     #[error("{0}")]
     Errno(#[from] nix::errno::Errno),
     /// Errors from libcontainer
-    #[cfg(unix)]
+    #[cfg(all(unix, feature = "libcontainer"))]
     #[error("{0}")]
     Libcontainer(#[from] libcontainer::error::LibcontainerError),
     #[error("{0}")]
