@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1774052063987,
+  "lastUpdate": 1774052065954,
   "repoUrl": "https://github.com/devigned/runwasi",
   "entries": {
     "HTTP Throughput": [
@@ -65948,6 +65948,52 @@ window.BENCHMARK_DATA = {
             "value": 98485989,
             "range": "± 2730245",
             "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "name": "Jiaxiao Zhou",
+            "username": "Mossaka",
+            "email": "duibao55328@gmail.com"
+          },
+          "committer": {
+            "name": "GitHub",
+            "username": "web-flow",
+            "email": "noreply@github.com"
+          },
+          "id": "d11cefbcc674bbbc032c422046106329a0b22ff4",
+          "message": "Merge pull request #856 from dblnz/add-mdbook\n\nInitial work to add a mdbook documentation style",
+          "timestamp": "2025-02-25T20:04:59Z",
+          "url": "https://github.com/devigned/runwasi/commit/d11cefbcc674bbbc032c422046106329a0b22ff4"
+        },
+        "date": 1774052052574,
+        "tool": "customSmallerIsBetter",
+        "benches": [
+          {
+            "name": "wamr/memory-usage",
+            "value": 15456,
+            "unit": "kB",
+            "extra": "shim: 12584 kB\nzygote: 2872 kB"
+          },
+          {
+            "name": "wasmedge/memory-usage",
+            "value": 66436,
+            "unit": "kB",
+            "extra": "shim: 54004 kB\nzygote: 12432 kB"
+          },
+          {
+            "name": "wasmer/memory-usage",
+            "value": 18628,
+            "unit": "kB",
+            "extra": "shim: 15244 kB\nzygote: 3384 kB"
+          },
+          {
+            "name": "wasmtime/memory-usage",
+            "value": 19408,
+            "unit": "kB",
+            "extra": "shim: 16156 kB\nzygote: 3252 kB"
           }
         ]
       }
